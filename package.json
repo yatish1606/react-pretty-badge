@@ -1,6 +1,6 @@
 {
   "name": "react-pretty-badge",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple and stylish React badge component.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",

@@ -7,7 +7,8 @@
         "jsx": "react",
         "strict": true,
         "declarationMap": true,
-        "esModuleInterop": true
+        "esModuleInterop": true,
+        "emitDeclarationOnly": true
     },
     "include": ["src"]
 }

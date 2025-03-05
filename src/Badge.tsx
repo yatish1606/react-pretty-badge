@@ -1,6 +1,6 @@
 import * as React from "react";
 import { FC, useEffect, useState } from "react";
-import { PredefinedColor, predefinedColors } from "./BadgeColors";
+import { PredefinedColor, isValidColor, predefinedColors } from "./BadgeColors";
 import { PrettyBadgeProps, PrettyBadgeSize } from "./BadgeProps";
 const DEFAULT_SIZE: PrettyBadgeSize = "md";
 const DEFAULT_COLOR: PredefinedColor = "grey";
@@ -108,18 +108,20 @@ const Badge: FC<PrettyBadgeProps> = (props: PrettyBadgeProps) => {
     };
 
     if (
-      props.color &&
-      (props.color as string).charAt(0) != "#" && // More robust hex check
+      props.color != undefined &&
+      (props.color as string).charAt(0) != "#" &&
       isPredefinedColor(props.color)
     ) {
       baseColor = (predefinedColors as any)[props.color];
-      console.log("is predefined", baseColor);
+    } else if (!isValidColor(props.color as string)) {
+      console.error("Invalid hex code provided, defaulting to 'grey'");
+      baseColor =
+        predefinedColors[DEFAULT_COLOR as keyof typeof predefinedColors];
     } else {
       baseColor =
         props.color ||
         predefinedColors[DEFAULT_COLOR as keyof typeof predefinedColors];
     }
-    console.log("setting color", baseColor);
 
     const tint = `color-mix(in srgb, ${baseColor}, white 15%)`;
     const shade = `color-mix(in srgb, ${baseColor}, black 70%)`;
@@ -163,28 +165,20 @@ const Badge: FC<PrettyBadgeProps> = (props: PrettyBadgeProps) => {
       alignItems: "center",
       borderRadius,
       backgroundColor,
-      color: "#fff",
       padding,
-      fontSize: "12px",
-      fontWeight: "bold",
-      cursor: "pointer",
       width: "fit-content",
-      margin: 10,
       boxShadow,
     },
     badgeText: {
       fontSize,
       margin: 0,
       padding: 0,
-      fontFamily: "sans-serif",
       color: textColor,
       letterSpacing,
       lineHeight: "100%",
       textShadow,
     },
   };
-
-  console.log("rerendered", fontSize);
 
   return (
     <div

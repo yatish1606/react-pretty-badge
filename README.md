@@ -14,6 +14,8 @@ npm install react-pretty-badge
 
 ## 📦 Usage
 
+Create your component at the [demo page in a sandbox](https://react-pretty-badge.netlify.app/)
+
 ### **Basic Example**
 
 ```tsx
