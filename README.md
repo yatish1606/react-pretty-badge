@@ -1,6 +1,8 @@
-# react-pretty-badge 🎨
+# react-pretty-badge
 
 A simple and stylish React badge component.
+
+<img src="./pretty-badge-banner.png" width="100%"/>
 
 ## 🚀 Installation
 
@@ -81,17 +83,17 @@ Use the `className` property to add a custom class to the badge.
 
 ### **Available Colors**
 
-| Color  | Hex Code  | Preview                                                                             |
-| ------ | --------- | ----------------------------------------------------------------------------------- |
-| red    | `#FF5924` | <div style="width:16px; height:16px; background:#FF5924; border-radius:3px;"></div> |
-| blue   | `#3089F2` | <div style="width:16px; height:16px; background:#3089F2; border-radius:3px;"></div> |
-| green  | `#2ECC71` | <div style="width:16px; height:16px; background:#2ecc71; border-radius:3px;"></div> |
-| yellow | `#FBBE29` | <div style="width:16px; height:16px; background:#FBBE29; border-radius:3px;"></div> |
-| purple | `#9B59B6` | <div style="width:16px; height:16px; background:#9b59b6; border-radius:3px;"></div> |
-| grey   | `#8A8A8A` | <div style="width:16px; height:16px; background:#8a8a8a; border-radius:3px;"></div> |
-| orange | `#FF843E` | <div style="width:16px; height:16px; background:#FF843E; border-radius:3px;"></div> |
-| peach  | `#FEB8B7` | <div style="width:16px; height:16px; background:#FEB8B7; border-radius:3px;"></div> |
-| cyan   | `#0ABDF6` | <div style="width:16px; height:16px; background:#0ABDF6; border-radius:3px;"></div> |
+| Color  | Hex Code  | Preview                                           |
+| ------ | --------- | ------------------------------------------------- |
+| red    | `#FF5924` | ![](https://placehold.co/15x15/f03c15/FF5924.png) |
+| blue   | `#3089F2` | ![](https://placehold.co/15x15/3089F2/FF5924.png) |
+| green  | `#2ECC71` | ![](https://placehold.co/15x15/2ECC71/FF5924.png) |
+| yellow | `#FBBE29` | ![](https://placehold.co/15x15/FBBE29/FF5924.png) |
+| purple | `#9B59B6` | ![](https://placehold.co/15x15/9B59B6/FF5924.png) |
+| grey   | `#8A8A8A` | ![](https://placehold.co/15x15/8A8A8A/FF5924.png) |
+| orange | `#FF843E` | ![](https://placehold.co/15x15/FF843E/FF5924.png) |
+| peach  | `#FEB8B7` | ![](https://placehold.co/15x15/FEB8B7/FF5924.png) |
+| cyan   | `#0ABDF6` | ![](https://placehold.co/15x15/0ABDF6/FF5924.png) |
 
 #### Using a predefined color
 
